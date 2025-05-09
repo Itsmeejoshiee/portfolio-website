@@ -8,6 +8,8 @@ Color textPrimaryColor = const Color(0xFFf8f8f8);
 
 Color textSecondaryColor = const Color(0xFFB0B0B0);
 
+Color textTertiaryColor = const Color(0xFF1c1d1c);
+
 Color cardBackgroundColor = const Color(0xFF1A1A1A);
 
 //Font Styles
@@ -20,18 +22,30 @@ TextStyle poppinsH1 = GoogleFonts.poppins(
 );
 
 TextStyle poppinsH2 = GoogleFonts.poppins(
-  fontSize: 40,
+  fontSize: 50,
   fontWeight: FontWeight.w600,
   color: textPrimaryColor,
 );
 
 TextStyle poppinsH3 = GoogleFonts.poppins(
+  fontSize: 40,
+  fontWeight: FontWeight.w600,
+  color: textPrimaryColor,
+);
+
+TextStyle poppinsH4 = GoogleFonts.poppins(
   fontSize: 28,
   fontWeight: FontWeight.w600,
   color: textPrimaryColor,
 );
 
 TextStyle poppinsBody = GoogleFonts.openSans(
+  fontSize: 16,
+  fontWeight: FontWeight.w400,
+  color: textPrimaryColor,
+);
+
+TextStyle ralewayBody = GoogleFonts.raleway(
   fontSize: 16,
   fontWeight: FontWeight.w400,
   color: textPrimaryColor,

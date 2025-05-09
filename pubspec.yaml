@@ -11,7 +11,8 @@ dependencies:
     sdk: flutter
   #UI Related Packages
   google_fonts: ^6.2.1
-  shadcn_ui: ^0.25.1
+  font_awesome_flutter: ^10.8.0
+  timelines_plus: ^1.0.6
 
 dev_dependencies:
   flutter_test:
@@ -20,3 +21,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/
+
+

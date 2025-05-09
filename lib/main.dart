@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/portfolio.dart';
-import 'package:shadcn_ui/shadcn_ui.dart';
 
 void main() {
   runApp(const MyApp());
