@@ -10,7 +10,7 @@ Color textSecondaryColor = const Color(0xFFB0B0B0);
 
 Color textTertiaryColor = const Color(0xFF1c1d1c);
 
-Color cardBackgroundColor = const Color(0xFF1A1A1A);
+Color cardBackgroundColor = const Color(0xFF22252A);
 
 //Font Styles
 

@@ -17,6 +17,7 @@ class PortfolioPage extends StatefulWidget {
 class _PortfolioPageState extends State<PortfolioPage> {
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
     return SafeArea(
       child: Scaffold(
         extendBodyBehindAppBar: true,
@@ -39,27 +40,6 @@ class _PortfolioPageState extends State<PortfolioPage> {
                       ),
                     ),
                     Spacer(),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text('Home', style: poppinsBody),
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text('Experiences', style: poppinsBody),
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text('Project', style: poppinsBody),
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text('Tech Stack', style: poppinsBody),
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text('Contact', style: poppinsBody),
-                    ),
-                    Spacer(),
                   ],
                 ),
                 backgroundColor: Colors.transparent,
@@ -70,7 +50,9 @@ class _PortfolioPageState extends State<PortfolioPage> {
         backgroundColor: backgroundColor,
         body: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 80),
+            padding: EdgeInsets.symmetric(
+              horizontal: screenWidth > 1060 ? 80 : 20,
+            ),
             child: ListView(
               scrollDirection: Axis.vertical,
               children: [
