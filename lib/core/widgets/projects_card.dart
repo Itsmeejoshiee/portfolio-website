@@ -18,23 +18,38 @@ class ProjectsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 500,
-      height: 350,
+      height: 300,
+      width: 550,
       child: Card(
         color: appColor,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(appName, style: poppinsH3),
-                Text(appDescription, style: poppinsBody),
-              ],
-            ),
-            Image.asset(imagePath, width: 200, height: 350, fit: BoxFit.cover),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Row(
+            children: [
+              Flexible(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(appName, style: poppinsH3.copyWith(fontSize: 30)),
+                    SizedBox(height: 10),
+                    Text(
+                      appDescription,
+                      style: poppinsBody,
+                      maxLines: 4,
+                      overflow: TextOverflow.ellipsis,
+                      textAlign: TextAlign.start,
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                width: 315,
+                child: Image.asset(imagePath, fit: BoxFit.cover),
+              ),
+            ],
+          ),
         ),
       ),
     );

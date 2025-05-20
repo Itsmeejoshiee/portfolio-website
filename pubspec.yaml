@@ -13,6 +13,7 @@ dependencies:
   google_fonts: ^6.2.1
   font_awesome_flutter: ^10.8.0
   timelines_plus: ^1.0.6
+  flutter_svg: ^2.1.0
 
 dev_dependencies:
   flutter_test:
