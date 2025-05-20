@@ -6,6 +6,7 @@ import 'package:portfolio_website/core/widgets/primary_button.dart';
 import 'package:portfolio_website/core/widgets/secondary_button.dart';
 import 'package:portfolio_website/sections/experience.dart';
 import 'package:portfolio_website/sections/landing.dart';
+import 'package:portfolio_website/sections/projects.dart';
 
 class PortfolioPage extends StatefulWidget {
   const PortfolioPage({super.key});
@@ -58,10 +59,10 @@ class _PortfolioPageState extends State<PortfolioPage> {
               children: [
                 LandingSection(),
                 ExperienceSection(),
+                ProjectSection(),
                 Container(
                   child: Column(
                     children: [
-                      Text("Projects", style: poppinsH2),
                       Text("Tech Stack", style: poppinsH2),
                       Text('This is Heading 1', style: poppinsH1),
                       SizedBox(height: 20),
