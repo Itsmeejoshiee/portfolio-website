@@ -46,7 +46,17 @@ class ProjectsCard extends StatelessWidget {
               ),
               SizedBox(
                 width: 260,
-                child: Image.asset(imagePath, fit: BoxFit.cover),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 15,
+                      child: SizedBox(
+                        width: 260,
+                        child: Image.asset(imagePath, fit: BoxFit.cover),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
