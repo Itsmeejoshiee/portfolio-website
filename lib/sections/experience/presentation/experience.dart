@@ -14,7 +14,7 @@ class ExperienceSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text("My Journey", style: poppinsH2),
-          SizedBox(height: 20),
+          SizedBox(height: 35),
           Text("Work Experience", style: poppinsH3),
           SizedBox(height: 10),
           ExperienceCard(
@@ -38,6 +38,7 @@ class ExperienceSection extends StatelessWidget {
             description:
                 'Worked with private and government clients, supporting marketing, managing projects, ensuring quality, and coordinating teams.',
           ),
+          SizedBox(height: 35),
           Text("Involvement", style: poppinsH3),
           SizedBox(height: 10),
           ExperienceCard(
@@ -66,8 +67,9 @@ class ExperienceSection extends StatelessWidget {
       desktopView: Column(
         children: [
           Text("My Journey", style: poppinsH2),
+          SizedBox(height: 30),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Column(
@@ -98,6 +100,7 @@ class ExperienceSection extends StatelessWidget {
                   ),
                 ],
               ),
+              const SizedBox(width: 150),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [

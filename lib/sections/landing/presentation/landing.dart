@@ -96,96 +96,99 @@ class LandingSection extends StatelessWidget {
           ],
         ),
       ),
-      desktopView: SizedBox(
-        width: double.maxFinite,
-        child: Row(
-          children: [
-            Flexible(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SizedBox(height: 100),
-                  Text("Hi! I'm Josh Gorospe", style: poppinsH1),
-                  Text(
-                    "Software Engineer & Community Builder",
-                    style: poppinsH3,
-                  ),
-                  SizedBox(height: 10),
-                  ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 600),
-                    child: Text(
-                      "I specialize in mobile app development with Flutter and Dart, crafting fast and seamless cross-platform apps. I'm currently expanding my expertise in native Android Development with Kotlin to deliver even more refined mobile experiences.",
-                      style: poppinsBody,
+      desktopView: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 50),
+        child: SizedBox(
+          width: double.maxFinite,
+          child: Row(
+            children: [
+              Flexible(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(height: 100),
+                    Text("Hi! I'm Josh Gorospe", style: poppinsH1),
+                    Text(
+                      "Software Engineer & Community Builder",
+                      style: poppinsH3,
                     ),
-                  ),
-                  SizedBox(height: 20),
-                  ConstrainedBox(
-                    constraints: const BoxConstraints(maxWidth: 600),
-                    child: Text(
-                      "Beyond coding, I’m passionate about building communities and sharing knowledge. I strive to empower developers by creating spaces that foster learning, collaboration, and growth.",
-                      style: poppinsBody,
+                    SizedBox(height: 10),
+                    ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 600),
+                      child: Text(
+                        "I specialize in mobile app development with Flutter and Dart, crafting fast and seamless cross-platform apps. I'm currently expanding my expertise in native Android Development with Kotlin to deliver even more refined mobile experiences.",
+                        style: poppinsBody,
+                      ),
                     ),
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    children: [
-                      PrimaryButton(
-                        buttonName: 'Download Resume',
-                        onPressed: () {},
+                    SizedBox(height: 20),
+                    ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 600),
+                      child: Text(
+                        "Beyond coding, I’m passionate about building communities and sharing knowledge. I strive to empower developers by creating spaces that foster learning, collaboration, and growth.",
+                        style: poppinsBody,
                       ),
-                      SizedBox(width: 20),
-                      SecondaryButton(
-                        buttonName: 'Reach Out To Me',
-                        onPressed: () {},
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 20),
-                  Row(
-                    children: [
-                      SizedBox(width: 10),
-                      IconButton(
-                        onPressed: () {},
-                        icon: FaIcon(
-                          FontAwesomeIcons.github,
-                          color: textPrimaryColor,
+                    ),
+                    SizedBox(height: 20),
+                    Row(
+                      children: [
+                        PrimaryButton(
+                          buttonName: 'Download Resume',
+                          onPressed: () {},
                         ),
-                      ),
-                      SizedBox(width: 10),
-                      IconButton(
-                        onPressed: () {},
-                        icon: FaIcon(
-                          FontAwesomeIcons.linkedin,
-                          color: textPrimaryColor,
+                        SizedBox(width: 20),
+                        SecondaryButton(
+                          buttonName: 'Reach Out To Me',
+                          onPressed: () {},
                         ),
-                      ),
-                      SizedBox(width: 10),
-                      IconButton(
-                        onPressed: () {},
-                        icon: FaIcon(
-                          FontAwesomeIcons.instagram,
-                          color: textPrimaryColor,
+                      ],
+                    ),
+                    SizedBox(height: 20),
+                    Row(
+                      children: [
+                        SizedBox(width: 10),
+                        IconButton(
+                          onPressed: () {},
+                          icon: FaIcon(
+                            FontAwesomeIcons.github,
+                            color: textPrimaryColor,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            Expanded(
-              flex: 1,
-              child: CircleAvatar(
-                radius: 200,
-                backgroundColor: cardBackgroundColor,
-                child: Image.asset(
-                  'assets/itsmeejoshie.png',
-                  fit: BoxFit.cover,
-                  width: 400,
+                        SizedBox(width: 10),
+                        IconButton(
+                          onPressed: () {},
+                          icon: FaIcon(
+                            FontAwesomeIcons.linkedin,
+                            color: textPrimaryColor,
+                          ),
+                        ),
+                        SizedBox(width: 10),
+                        IconButton(
+                          onPressed: () {},
+                          icon: FaIcon(
+                            FontAwesomeIcons.instagram,
+                            color: textPrimaryColor,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
-            ),
-          ],
+              Expanded(
+                flex: 1,
+                child: CircleAvatar(
+                  radius: 200,
+                  backgroundColor: cardBackgroundColor,
+                  child: Image.asset(
+                    'assets/itsmeejoshie.png',
+                    fit: BoxFit.cover,
+                    width: 400,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
