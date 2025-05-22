@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:portfolio_website/core/services/launch_url.dart';
 import 'package:portfolio_website/core/theme.dart';
 import 'package:portfolio_website/core/widgets/primary_button.dart';
 import 'package:portfolio_website/core/widgets/secondary_button.dart';
 import 'package:portfolio_website/core/widgets/responsive_layout.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class LandingSection extends StatelessWidget {
   const LandingSection({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final LaunchUrlService launchUrlService = LaunchUrlService();
     return ResponsiveLayout(
       mobileView: SizedBox(
         width: double.maxFinite,
@@ -139,7 +142,9 @@ class LandingSection extends StatelessWidget {
                         SizedBox(width: 20),
                         SecondaryButton(
                           buttonName: 'Reach Out To Me',
-                          onPressed: () {},
+                          onPressed: () async {
+                            launchUrlService.sendEmail();
+                          },
                         ),
                       ],
                     ),
@@ -148,7 +153,11 @@ class LandingSection extends StatelessWidget {
                       children: [
                         SizedBox(width: 10),
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            launchUrlService.launchExternalWeb(
+                              "https://github.com/Itsmeejoshiee",
+                            );
+                          },
                           icon: FaIcon(
                             FontAwesomeIcons.github,
                             color: textPrimaryColor,
@@ -156,7 +165,11 @@ class LandingSection extends StatelessWidget {
                         ),
                         SizedBox(width: 10),
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            launchUrlService.launchExternalWeb(
+                              "https://www.linkedin.com/in/itsmeejoshie",
+                            );
+                          },
                           icon: FaIcon(
                             FontAwesomeIcons.linkedin,
                             color: textPrimaryColor,
@@ -164,7 +177,11 @@ class LandingSection extends StatelessWidget {
                         ),
                         SizedBox(width: 10),
                         IconButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            launchUrlService.launchExternalWeb(
+                              "https://www.instagram.com/itsmee_joshie",
+                            );
+                          },
                           icon: FaIcon(
                             FontAwesomeIcons.instagram,
                             color: textPrimaryColor,
