@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/core/theme.dart';
 import 'package:portfolio_website/sections/experience/widgets/experience_card.dart';
-import 'package:portfolio_website/responsive_view/responsive_layout.dart';
+import 'package:portfolio_website/core/widgets/responsive_layout.dart';
 
 class ExperienceSection extends StatelessWidget {
   const ExperienceSection({super.key});

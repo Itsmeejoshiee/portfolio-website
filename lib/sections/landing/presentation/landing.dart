@@ -3,7 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_website/core/theme.dart';
 import 'package:portfolio_website/core/widgets/primary_button.dart';
 import 'package:portfolio_website/core/widgets/secondary_button.dart';
-import 'package:portfolio_website/responsive_view/responsive_layout.dart';
+import 'package:portfolio_website/core/widgets/responsive_layout.dart';
 
 class LandingSection extends StatelessWidget {
   const LandingSection({super.key});
@@ -97,7 +97,7 @@ class LandingSection extends StatelessWidget {
         ),
       ),
       desktopView: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 50),
+        padding: const EdgeInsets.symmetric(horizontal: 80),
         child: SizedBox(
           width: double.maxFinite,
           child: Row(
