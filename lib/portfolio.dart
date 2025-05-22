@@ -5,6 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_website/core/widgets/primary_button.dart';
 import 'package:portfolio_website/core/widgets/secondary_button.dart';
 import 'package:portfolio_website/sections/experience/presentation/experience.dart';
+import 'package:portfolio_website/sections/footer/presentation/footer.dart';
 import 'package:portfolio_website/sections/landing/presentation/landing.dart';
 import 'package:portfolio_website/sections/projects/presentation/projects.dart';
 import 'package:portfolio_website/sections/tech/presentation/tech.dart';
@@ -65,7 +66,8 @@ class _PortfolioPageState extends State<PortfolioPage> {
                 ProjectSection(),
                 SizedBox(height: 50),
                 TechSection(),
-                SizedBox(height: 50),
+                SizedBox(height: 100),
+                FooterSection(),
               ],
             ),
           ),
