@@ -9,14 +9,20 @@ class TechCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 120,
+      width: 160,
       height: 80,
       child: Card(
-        color: cardBackgroundColor,
+        color: techStackCardColor,
         child: Row(
           children: [
+            const SizedBox(width: 10),
             Image.asset(techImage, width: 40, height: 40),
-            Text(techName, style: poppinsBody),
+            const SizedBox(width: 10),
+            Text(
+              techName,
+              style: poppinsBody.copyWith(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(width: 10),
           ],
         ),
       ),

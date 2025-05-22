@@ -18,6 +18,22 @@ class TechSection extends StatelessWidget {
               techName: "Flutter",
               techImage: "assets/tech_stack/flutter_icon.png",
             ),
+            TechCard(
+              techName: "Firebase",
+              techImage: "assets/tech_stack/firebase_icon.png",
+            ),
+            TechCard(
+              techName: "Supabase",
+              techImage: "assets/tech_stack/supabase_icon.png",
+            ),
+            TechCard(
+              techName: "Git",
+              techImage: "assets/tech_stack/git_icon.png",
+            ),
+            TechCard(
+              techName: "Notion",
+              techImage: "assets/tech_stack/notion_icon.png",
+            ),
           ],
         ),
       ],

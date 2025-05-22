@@ -12,6 +12,8 @@ Color textTertiaryColor = const Color(0xFF1c1d1c);
 
 Color cardBackgroundColor = const Color(0xFF22252A);
 
+Color techStackCardColor = const Color(0xFF393E46);
+
 //Font Styles
 
 //Hero
