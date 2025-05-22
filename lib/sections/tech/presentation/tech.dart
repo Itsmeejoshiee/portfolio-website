@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/core/theme.dart';
-import 'package:portfolio_website/responsive_view/responsive_layout.dart';
+import 'package:portfolio_website/core/widgets/responsive_layout.dart';
 import 'package:portfolio_website/sections/tech/widget/tech_card.dart';
 
 class TechSection extends StatelessWidget {
@@ -13,6 +13,9 @@ class TechSection extends StatelessWidget {
         Text("Technical Stack", style: poppinsH2),
         SizedBox(height: 20),
         Wrap(
+          direction: Axis.horizontal,
+          spacing: 15,
+          runSpacing: 15,
           children: [
             TechCard(
               techName: "Flutter",

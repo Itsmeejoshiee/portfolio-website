@@ -12,6 +12,7 @@ class TechCard extends StatelessWidget {
       width: 160,
       height: 80,
       child: Card(
+        elevation: 20,
         color: techStackCardColor,
         child: Row(
           children: [
