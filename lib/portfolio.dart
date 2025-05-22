@@ -4,9 +4,10 @@ import 'package:portfolio_website/core/theme.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_website/core/widgets/primary_button.dart';
 import 'package:portfolio_website/core/widgets/secondary_button.dart';
-import 'package:portfolio_website/sections/experience.dart';
-import 'package:portfolio_website/sections/landing.dart';
-import 'package:portfolio_website/sections/projects.dart';
+import 'package:portfolio_website/sections/experience/presentation/experience.dart';
+import 'package:portfolio_website/sections/landing/presentation/landing.dart';
+import 'package:portfolio_website/sections/projects/presentation/projects.dart';
+import 'package:portfolio_website/sections/tech/presentation/tech.dart';
 
 class PortfolioPage extends StatefulWidget {
   const PortfolioPage({super.key});
@@ -60,19 +61,18 @@ class _PortfolioPageState extends State<PortfolioPage> {
                 LandingSection(),
                 ExperienceSection(),
                 ProjectSection(),
-                Container(
-                  child: Column(
-                    children: [
-                      Text("Tech Stack", style: poppinsH2),
-                      Text('This is Heading 1', style: poppinsH1),
-                      SizedBox(height: 20),
-                      Text('This is Heading 2', style: poppinsH2),
-                      SizedBox(height: 20),
-                      Text('This is Heading 3', style: poppinsH3),
-                      SizedBox(height: 20),
-                      Text('This is Body Text', style: poppinsBody),
-                    ],
-                  ),
+                TechSection(),
+                Column(
+                  children: [
+                    Text("Tech Stack", style: poppinsH2),
+                    Text('This is Heading 1', style: poppinsH1),
+                    SizedBox(height: 20),
+                    Text('This is Heading 2', style: poppinsH2),
+                    SizedBox(height: 20),
+                    Text('This is Heading 3', style: poppinsH3),
+                    SizedBox(height: 20),
+                    Text('This is Body Text', style: poppinsBody),
+                  ],
                 ),
               ],
             ),

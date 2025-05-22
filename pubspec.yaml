@@ -26,5 +26,6 @@ flutter:
   assets:
     - assets/
     - assets/projects/
+    - assets/tech_stack/
 
 
