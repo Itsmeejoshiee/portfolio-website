@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/core/theme.dart';
-import 'package:portfolio_website/core/widgets/responsive_layout.dart';
 import 'package:portfolio_website/sections/tech/widget/tech_card.dart';
 
 class TechSection extends StatelessWidget {
