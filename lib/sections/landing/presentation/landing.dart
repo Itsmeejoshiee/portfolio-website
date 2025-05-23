@@ -5,7 +5,6 @@ import 'package:portfolio_website/core/theme.dart';
 import 'package:portfolio_website/core/widgets/primary_button.dart';
 import 'package:portfolio_website/core/widgets/secondary_button.dart';
 import 'package:portfolio_website/core/widgets/responsive_layout.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class LandingSection extends StatelessWidget {
   const LandingSection({super.key});
@@ -137,7 +136,11 @@ class LandingSection extends StatelessWidget {
                       children: [
                         PrimaryButton(
                           buttonName: 'Download Resume',
-                          onPressed: () {},
+                          onPressed: () {
+                            launchUrlService.launchExternalWeb(
+                              "https://drive.google.com/file/d/1bDIbmKn5q6Qn4DEoF38AJfWxKUXX64DJ/view?usp=sharing",
+                            );
+                          },
                         ),
                         SizedBox(width: 20),
                         SecondaryButton(
