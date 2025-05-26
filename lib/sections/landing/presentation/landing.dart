@@ -52,15 +52,23 @@ class LandingSection extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
+            Wrap(
+              alignment: WrapAlignment.center,
               children: [
-                PrimaryButton(buttonName: 'Download Resume', onPressed: () {}),
+                PrimaryButton(
+                  buttonName: 'Download Resume',
+                  onPressed: () {
+                    launchUrlService.launchExternalWeb(
+                      "https://drive.google.com/file/d/1bDIbmKn5q6Qn4DEoF38AJfWxKUXX64DJ/view?usp=sharing",
+                    );
+                  },
+                ),
                 SizedBox(width: 20),
                 SecondaryButton(
                   buttonName: 'Reach Out To Me',
-                  onPressed: () {},
+                  onPressed: () {
+                    launchUrlService.sendEmail();
+                  },
                 ),
               ],
             ),
@@ -71,7 +79,11 @@ class LandingSection extends StatelessWidget {
               children: [
                 SizedBox(width: 10),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    launchUrlService.launchExternalWeb(
+                      "https://github.com/Itsmeejoshiee",
+                    );
+                  },
                   icon: FaIcon(
                     FontAwesomeIcons.github,
                     color: textPrimaryColor,
@@ -79,7 +91,11 @@ class LandingSection extends StatelessWidget {
                 ),
                 SizedBox(width: 10),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    launchUrlService.launchExternalWeb(
+                      "https://www.linkedin.com/in/itsmeejoshie",
+                    );
+                  },
                   icon: FaIcon(
                     FontAwesomeIcons.linkedin,
                     color: textPrimaryColor,
@@ -87,7 +103,11 @@ class LandingSection extends StatelessWidget {
                 ),
                 SizedBox(width: 10),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    launchUrlService.launchExternalWeb(
+                      "https://www.instagram.com/itsmee_joshie",
+                    );
+                  },
                   icon: FaIcon(
                     FontAwesomeIcons.instagram,
                     color: textPrimaryColor,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_website/core/services/launch_url.dart';
 import 'package:portfolio_website/core/theme.dart';
 import 'package:portfolio_website/sections/projects/widgets/projects_card.dart';
-import 'package:portfolio_website/core/widgets/responsive_layout.dart';
 
 class ProjectSection extends StatelessWidget {
   const ProjectSection({super.key});
