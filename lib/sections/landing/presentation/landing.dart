@@ -56,23 +56,28 @@ class LandingSection extends StatelessWidget {
               alignment: WrapAlignment.center,
               verticalDirection: VerticalDirection.down,
               spacing: 10,
-              runSpacing: 10,
+              runSpacing: 20,
               runAlignment: WrapAlignment.center,
               children: [
-                PrimaryButton(
-                  buttonName: 'Download Resume',
-                  onPressed: () {
-                    launchUrlService.launchExternalWeb(
-                      "https://drive.google.com/file/d/1bDIbmKn5q6Qn4DEoF38AJfWxKUXX64DJ/view?usp=sharing",
-                    );
-                  },
+                SizedBox(
+                  width: 190,
+                  child: PrimaryButton(
+                    buttonName: 'Download Resume',
+                    onPressed: () {
+                      launchUrlService.launchExternalWeb(
+                        "https://drive.google.com/file/d/1bDIbmKn5q6Qn4DEoF38AJfWxKUXX64DJ/view?usp=sharing",
+                      );
+                    },
+                  ),
                 ),
-                SizedBox(width: 20),
-                SecondaryButton(
-                  buttonName: 'Reach Out To Me',
-                  onPressed: () {
-                    launchUrlService.sendEmail();
-                  },
+                SizedBox(
+                  width: 190,
+                  child: SecondaryButton(
+                    buttonName: 'Reach Out To Me',
+                    onPressed: () {
+                      launchUrlService.sendEmail();
+                    },
+                  ),
                 ),
               ],
             ),
