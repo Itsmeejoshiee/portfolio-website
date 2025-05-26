@@ -20,7 +20,6 @@ class ProjectsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screendWidth = MediaQuery.of(context).size.width;
-
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
@@ -60,7 +59,8 @@ class ProjectsCard extends StatelessWidget {
                           top: screendWidth < 600 ? 50 : 15,
                           left: screendWidth < 600 ? 40 : 0,
                           child: SizedBox(
-                            width: screendWidth < 600 ? 200 : 260,
+                            width:
+                                screendWidth < 600 ? screendWidth * 0.4 : 260,
                             child: Image.asset(imagePath, fit: BoxFit.cover),
                           ),
                         ),
