@@ -54,6 +54,10 @@ class LandingSection extends StatelessWidget {
             SizedBox(height: 20),
             Wrap(
               alignment: WrapAlignment.center,
+              verticalDirection: VerticalDirection.down,
+              spacing: 10,
+              runSpacing: 10,
+              runAlignment: WrapAlignment.center,
               children: [
                 PrimaryButton(
                   buttonName: 'Download Resume',

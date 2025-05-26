@@ -57,9 +57,10 @@ class ProjectsCard extends StatelessWidget {
                     child: Stack(
                       children: [
                         Positioned(
-                          top: 15,
+                          top: screendWidth < 600 ? 50 : 15,
+                          left: screendWidth < 600 ? 40 : 0,
                           child: SizedBox(
-                            width: screendWidth < 600 ? 225 : 260,
+                            width: screendWidth < 600 ? 200 : 260,
                             child: Image.asset(imagePath, fit: BoxFit.cover),
                           ),
                         ),
