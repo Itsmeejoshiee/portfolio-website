@@ -62856,10 +62856,10 @@ A.Yq.prototype={
 $0(){this.a.ed("https://github.com/Itsmeejoshiee/twist_bloom/releases/tag/1.0.0")},
 $S:0}
 A.ok.prototype={
-N(a){var s=this,r=null,q=A.c5(a,r,t.w).w.a.a,p=t.E,o=A.c([new A.nH(1,B.k2,new A.eg(B.z7,A.h7(A.c([A.bY(s.d,r,r,$.n1().Iw(30),r),A.bc(r,10,r),A.bY(s.e,4,B.bh,$.i3(),B.aw)],p),B.aI,B.c4,B.hq),r),r)],p)
-if(q>600)o.push(new A.eg(B.jV,A.bc(A.a0H(B.f6,A.c([A.ab3(r,A.bc(A.Cg(s.c,B.dw,r,r),r,240),r,r,r,r,20,r)],p),B.ib),r,260),r))
-if(q<=600)o.push(new A.eg(B.jV,new A.ja(B.vY,r,r,A.bc(A.Cg(s.c,B.dw,r,r),r,q*0.4),r),r))
-return A.D2(A.aaz(r,A.bc(A.a9Y(A.mf(o,B.V,B.a0,B.a1),s.f,r),300,550),B.aU,!1,r,r,r,r,r,r,r,r,r,r,r,r,s.r,r,r,r),B.bg,r,r,r)}}
+N(a){var s=this,r=null,q=A.c5(a,r,t.w).w.a.a,p=q<500?250:300,o=t.E,n=A.c([new A.nH(1,B.k2,new A.eg(B.z7,A.h7(A.c([A.bY(s.d,r,r,$.n1().Iw(30),r),A.bc(r,10,r),A.bY(s.e,4,B.bh,$.i3(),B.aw)],o),B.aI,B.c4,B.hq),r),r)],o)
+if(q>600)n.push(new A.eg(B.jV,A.bc(A.a0H(B.f6,A.c([A.ab3(r,A.bc(A.Cg(s.c,B.dw,r,r),r,240),r,r,r,r,20,r)],o),B.ib),r,260),r))
+if(q<=600)n.push(new A.eg(B.jV,new A.ja(B.vY,r,r,A.bc(A.Cg(s.c,B.dw,r,r),r,q*0.4),r),r))
+return A.D2(A.aaz(r,A.bc(A.a9Y(A.mf(n,B.V,B.a0,B.a1),s.f,r),p,550),B.aU,!1,r,r,r,r,r,r,r,r,r,r,r,r,s.r,r,r,r),B.bg,r,r,r)}}
 A.FC.prototype={
 N(a){var s=null,r=t.E
 return A.h7(A.c([A.bY("Technical Stack",s,s,$.Nt(),s),A.bc(s,20,s),A.abC(B.bQ,A.c([new A.k7("Flutter","assets/tech_stack/flutter_icon.png",s),new A.k7("Firebase","assets/tech_stack/firebase_icon.png",s),new A.k7("Supabase","assets/tech_stack/supabase_icon.png",s),new A.k7("Git","assets/tech_stack/git_icon.png",s),new A.k7("Notion","assets/tech_stack/notion_icon.png",s)],r),B.bp,B.bQ,15,15,B.dn)],r),B.V,B.a0,B.a1)}}
