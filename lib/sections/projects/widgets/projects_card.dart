@@ -56,8 +56,8 @@ class ProjectsCard extends StatelessWidget {
                     child: Stack(
                       children: [
                         Positioned(
-                          top: screendWidth < 600 ? 50 : 15,
-                          left: screendWidth < 600 ? 40 : 0,
+                          top: screendWidth < 600 ? screendWidth * 0.1 : 15,
+                          left: screendWidth < 600 ? screendWidth * 0.1 : 0,
                           child: SizedBox(
                             width:
                                 screendWidth < 600 ? screendWidth * 0.4 : 260,
