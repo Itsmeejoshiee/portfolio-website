@@ -25,7 +25,7 @@ class ProjectsCard extends StatelessWidget {
       child: GestureDetector(
         onTap: onTap,
         child: SizedBox(
-          height: 300,
+          height: screenWidth < 500 ? 250 : 300,
           width: 550,
           child: Card(
             color: appColor,
