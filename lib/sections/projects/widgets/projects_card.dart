@@ -19,7 +19,7 @@ class ProjectsCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final screendWidth = MediaQuery.of(context).size.width;
+    final screenWidth = MediaQuery.of(context).size.width;
     return MouseRegion(
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
@@ -29,11 +29,11 @@ class ProjectsCard extends StatelessWidget {
           width: 550,
           child: Card(
             color: appColor,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15),
-              child: Row(
-                children: [
-                  Flexible(
+            child: Row(
+              children: [
+                Flexible(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -51,24 +51,37 @@ class ProjectsCard extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    width: 260,
-                    child: Stack(
-                      children: [
-                        Positioned(
-                          top: screendWidth < 600 ? screendWidth * 0.1 : 15,
-                          left: screendWidth < 600 ? screendWidth * 0.1 : 0,
-                          child: SizedBox(
-                            width:
-                                screendWidth < 600 ? screendWidth * 0.4 : 260,
-                            child: Image.asset(imagePath, fit: BoxFit.cover),
+                ),
+                if (screenWidth > 600)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 20),
+                    child: SizedBox(
+                      width: 260,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 20,
+                            child: SizedBox(
+                              width: 240,
+                              child: Image.asset(imagePath, fit: BoxFit.cover),
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ],
-              ),
+                if (screenWidth <= 600)
+                  Padding(
+                    padding: const EdgeInsets.only(right: 20),
+                    child: Align(
+                      alignment: Alignment.bottomRight,
+                      child: SizedBox(
+                        width: screenWidth * 0.4,
+                        child: Image.asset(imagePath, fit: BoxFit.cover),
+                      ),
+                    ),
+                  ),
+              ],
             ),
           ),
         ),
