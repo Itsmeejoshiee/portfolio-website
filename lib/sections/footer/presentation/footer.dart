@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio_website/core/theme.dart';
 import 'package:portfolio_website/core/utils/year_utils.dart';
 

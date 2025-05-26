@@ -1,9 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:portfolio_website/core/theme.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:portfolio_website/core/widgets/primary_button.dart';
-import 'package:portfolio_website/core/widgets/secondary_button.dart';
+
 import 'package:portfolio_website/sections/experience/presentation/experience.dart';
 import 'package:portfolio_website/sections/footer/presentation/footer.dart';
 import 'package:portfolio_website/sections/landing/presentation/landing.dart';
