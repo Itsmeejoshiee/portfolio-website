@@ -1,0 +1,10 @@
+[build]
+  command = "flutter build web"
+  publish = "build/web"
+
+[build.environment]
+  # Required for Flutter
+  FLUTTER_VERSION = "3.22.0"
+
+[[plugins]]
+  package = "netlify-plugin-flutter"
