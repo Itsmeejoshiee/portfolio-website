@@ -20,16 +20,16 @@ class ExperienceSection extends StatelessWidget {
           ExperienceCard(
             company: 'Reelist8',
             position: 'Mobile Developer',
-            duration: 'June 2025 - Present',
+            duration: 'May 2025 - August 2025',
             description:
-                'Currently working on the Reelist8 app, focusing on building the mobile application using Flutter.',
+                "Developed the second iteration of Reelist8’s mobile app as the sole mobile developer, rebuilding its core features for greater stability and usability. I integrated key APIs, designed a fully responsive UI that worked seamlessly across devices, and collaborated with both the team and founders to bring business needs to life in the product.",
           ),
           ExperienceCard(
             company: 'Reelist8',
             position: 'Mobile Developer Intern',
-            duration: 'Jan 2025 - June 2025',
+            duration: 'Jan 2025 - May 2025',
             description:
-                'Built the initial MVP of Reelist8, including authentication, style quiz, property requirements, homepage, and listing page features.',
+                'Built the initial MVP of Reelist8, implementing core features like authentication, a style quiz, property requirements, homepage, and listing pages that shaped the foundation of the app.',
           ),
           ExperienceCard(
             company: 'Symph',
@@ -80,16 +80,16 @@ class ExperienceSection extends StatelessWidget {
                   ExperienceCard(
                     company: 'Reelist8',
                     position: 'Mobile Developer',
-                    duration: 'June 2025 - Present',
+                    duration: 'May 2025 - August 2025',
                     description:
-                        'Currently working on the Reelist8 app, focusing on building the mobile application using Flutter.',
+                        "Developed the second iteration of Reelist8’s mobile app as the sole mobile developer, rebuilding its core features for greater stability and usability. I integrated key APIs, designed a fully responsive UI that worked seamlessly across devices, and collaborated with both the team and founders to bring business needs to life in the product.",
                   ),
                   ExperienceCard(
                     company: 'Reelist8',
                     position: 'Mobile Developer Intern',
-                    duration: 'Jan 2025 - June 2025',
+                    duration: 'Jan 2025 - May 2025',
                     description:
-                        'Built the initial MVP of Reelist8, including authentication, style quiz, property requirements, homepage, and listing page features.',
+                        'Built the initial MVP of Reelist8, implementing core features like authentication, a style quiz, property requirements, homepage, and listing pages that shaped the foundation of the app.',
                   ),
                   ExperienceCard(
                     company: 'Symph',
