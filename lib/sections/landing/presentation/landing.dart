@@ -167,7 +167,7 @@ class LandingSection extends StatelessWidget {
                           buttonName: 'Download Resume',
                           onPressed: () {
                             launchUrlService.launchExternalWeb(
-                              "https://drive.google.com/file/d/1bDIbmKn5q6Qn4DEoF38AJfWxKUXX64DJ/view?usp=sharing",
+                              "https://drive.google.com/file/d/1oSbzxK-48E0dzlWSlPeghgxK1S8qcP-6/view?usp=sharing",
                             );
                           },
                         ),
