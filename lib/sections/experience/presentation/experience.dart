@@ -18,6 +18,13 @@ class ExperienceSection extends StatelessWidget {
           Text("Work Experience", style: poppinsH3),
           SizedBox(height: 10),
           ExperienceCard(
+            company: 'HomesFarmsandLand LLC',
+            position: 'Software Engineer',
+            duration: 'August 2025 - Present',
+            description:
+                "I design automation workflows and create internal software tools across desktop and mobile platforms to streamline processes and improve productivity.",
+          ),
+          ExperienceCard(
             company: 'Reelist8',
             position: 'Mobile Developer',
             duration: 'May 2025 - August 2025',
